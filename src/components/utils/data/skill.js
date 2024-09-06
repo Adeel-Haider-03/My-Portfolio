@@ -8,7 +8,7 @@ export const skillsData = [
     'MySQL',
     'Git',
     'Photoshop',
-    'Microsoft Office',
+    'MS Office',
     'Bootstrap',
     'C++',
     'Java',
