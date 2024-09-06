@@ -64,7 +64,7 @@ export const skillsImage = (skill) => {
     case 'graphql':
       return graphql;
     
-    case 'microsoft office':
+    case 'ms office':
       return microsoftoffice;
 
       case 'photoshop':
