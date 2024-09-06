@@ -5,7 +5,7 @@ function Experience() {
   return (
     <div id='experience' className='text-center'>
      <div className="flex justify-center my-5 lg:py-8">
-        <div className="flex  items-center">
+        <div className="flex  items-center mb-3 lg:mb-0 md:mb-0">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-green-500 p-2 px-5 text-xl rounded-md">
             Experience
@@ -14,7 +14,7 @@ function Experience() {
         </div>
       </div>
 
-      <div className='grid grid-cols-2 gap-8 mx-6'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-8 mx-6'>
         {/* Junior Web Developer Card */}
         <BackgroundGradient className={`w-64 h-64 flex flex-col items-center justify-center p-4`} containerClassName={`flex justify-center mb-3`}>
           <h1 className='text-4xl mb-4 text-white'>Junior Web Developer</h1>
