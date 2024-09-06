@@ -25,14 +25,14 @@ function Contact() {
 			<div className="grid grid-cols-1 gap-5 lg:grid-cols-2 mt-5">
 
       <input
-            className="w-full bg-transparent text-white mt-2 p-3 rounded-lg border border-transparent bg-slate-900
+            className="w-full  bg-slate-900 text-white mt-2 p-3 rounded-lg border border-transparent bg-slate-900
             bg-clip-padding focus:outline-none focus:ring-2 focus:ring-violet-500" 
             type="text" 
             placeholder="First Name*" 
             />
 
       <input
-            className="w-full bg-transparent text-white mt-2 p-3 rounded-lg border border-transparent bg-slate-900
+            className="w-full  bg-slate-900 text-white mt-2 p-3 rounded-lg border border-transparent bg-slate-900
             bg-clip-padding focus:outline-none focus:ring-2 focus:ring-violet-500" 
             type="text" 
             placeholder="Last Name*" 
