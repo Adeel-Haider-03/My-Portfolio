@@ -26,7 +26,7 @@ This is my personal portfolio website built using modern web technologies. It sh
 To run this project locally:
 
 1. Clone the repository:  
-   git clone https://github.com/your-username/portfolio-website.git
+   git clone https://github.com/your-username/portfolio-website.git  
    
 3. Navigate to the project directory:
 
