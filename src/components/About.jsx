@@ -15,9 +15,13 @@ function About() {
             Who I am?
           </p>
           <p className="text-gray-200 my-4 text-sm lg:text-lg">
-            {`I'm a dedicated front-end developer and AI enthusiast, currently pursuing a Bachelor's degree in Computer Science. With a strong foundation in web development, I specialize in creating dynamic, responsive user interfaces using React, Next.js, and Vite. I enjoy bringing ideas to life with modern tools like Framer Motion to enhance user experience through seamless animations and interactions.
+            {`I'm a passionate Full Stack Developer and final-year Computer Science student at UET Peshawar.I specialize in building modern, scalable web applications using technologies like React.js, Node.js, MongoDB, and Express.js.I enjoy turning complex problems into simple, user-friendly solutions through clean code and intuitive design.
 
-Beyond front-end development, I have experience with backend technologies like Node.js, Express.js, and MongoDB, enabling me to work across the full stack. I am particularly passionate about AI and its potential to revolutionize web development and other industries.`}
+Beyond code, I thrive in collaborative environments, value continuous learning, and love bringing ideas to life whether it’s improving frontend performance or designing clean RESTful APIs.
+
+I’m currently looking for remote or hybrid internships and junior developer roles, where I can grow under mentorship, contribute to meaningful projects, and level up in a professional team setting.
+
+Let’s build something great together.`}
           </p>
         </div>
         <div className="flex justify-center order-1 lg:order-2 mb-6">

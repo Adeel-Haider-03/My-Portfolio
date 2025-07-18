@@ -17,8 +17,8 @@ function Experience() {
       <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-8 mx-6'>
         {/* Junior Web Developer Card */}
         <BackgroundGradient className={`w-64 h-64 flex flex-col items-center justify-center p-4`} containerClassName={`flex justify-center mb-3`}>
-          <h1 className='text-4xl mb-4 text-white'>Junior Web Developer</h1>
-          <span className='text-xs text-green-600'>Jan 2023 - Present</span>
+          <h1 className='text-4xl mb-4 text-white'>Frontend Internship</h1>
+          <span className='text-xs text-green-600'>Digital Empowernment Network</span>
           <p className='text-md text-white mb-2'>
             Developed and maintained front-end features for various websites using HTML, CSS, and JavaScript.
           </p>
@@ -28,7 +28,7 @@ function Experience() {
         {/* Software Engineer Card */}
         <BackgroundGradient className={`w-64 h-64 flex flex-col items-center justify-center p-4`} containerClassName={`flex justify-center mb-3`}>
           <h1 className='text-4xl mb-4 text-white'>Software Engineer</h1>
-          <span className='text-xs text-green-600'>Jun 2021 - Dec 2022</span>
+          <span className='text-xs text-green-600'>Self employed</span>
           <p className='text-md text-white mb-2'>
             Collaborated in a team to design, build, and deploy full-stack web applications using React and Node.js.
           </p>
