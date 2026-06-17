@@ -24,8 +24,8 @@ function HeroSection() {
             Hello, <br />
             This is {' '}
             <span className=" text-[#16f2b3]">{`Adeel Haider`}</span>
-            {` , I'm a Professional `}
-            <span className=" text-[#16f2b3]">{`Web Developer`}</span>
+            {` , I'm a `}
+            <span className=" text-[#16f2b3]">{`Full Stack Developer`}</span>
             .
           </h1>
 
@@ -40,7 +40,7 @@ function HeroSection() {
             </a>
 
             <a
-              href="www.linkedin.com/in/adeelhaider3360"
+              href="https://www.linkedin.com/in/adeelhaider3360"
               target='_blank'
               rel="noopener noreferrer"
               className="transition-all text-green-500 hover:scale-125 duration-300"
@@ -84,8 +84,8 @@ function HeroSection() {
 
             <a className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-green-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
               target="_blank"
-              href="/Adeel Haider Resume.pdf"
-              download="Adeel_Resume.pdf"
+              href="/Adeel_Haider_Resume.pdf"
+              download="Adeel_Haider_Resume.pdf"
               rel="noopener noreferrer"
             >
               <span>Get Resume</span>

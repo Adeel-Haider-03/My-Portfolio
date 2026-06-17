@@ -16,6 +16,10 @@ import tailwind from '/svg/skills/tailwind.svg';
 import vitejs from '/svg/skills/vitejs.svg';
 import photoshop from '/svg/skills/photoshop.svg';
 import canva from '/svg/skills/canva.svg'
+import typescript from '/svg/skills/typescript.svg';
+import nodejs from '/svg/skills/nodejs.svg';
+import express from '/svg/skills/express.svg';
+import docker from '/svg/skills/docker.svg';
 
 
 export const skillsImage = (skill) => {
@@ -31,9 +35,21 @@ export const skillsImage = (skill) => {
    
     case 'javascript':
       return javascript;
-   
+
+    case 'typescript':
+      return typescript;
+
     case 'react':
       return react;
+
+    case 'node.js':
+      return nodejs;
+
+    case 'express':
+      return express;
+
+    case 'docker':
+      return docker;
     
     case 'bootstrap':
       return bootstrap;

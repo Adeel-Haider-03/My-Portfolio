@@ -16,39 +16,38 @@ function Projects() {
 
     <div className='grid grid-cols-1 lg:grid-cols-2'>
       <SingleCard
-        title={"Blog Website"}
-        description={"This is a fully functional blog website built using React and Vite, with Appwrite as the backend service."}
+        title={"CodingBuddy — Tinder for Developers"}
+        description={"A full-stack MERN platform that matches developers by shared tech stack, with skill-based ranking, real-time Socket.io chat (typing indicators & read receipts), and 5 AI features powered by Google Gemini. Containerized with Docker, Docker Compose, and Nginx."}
+        LiveUrl={"https://coding-buddy-rust.vercel.app"}
+        GithubUrl={"https://github.com/Adeel-Haider-03/CodingBuddy"}
+        src={"./codingBuddy.png"}
+        />
+
+      <SingleCard
+        title={"Blog Platform"}
+        description={"A full-stack blog platform built with React and Appwrite, featuring authentication, Redux Toolkit state management, React Hook Form validation, and a TinyMCE rich-text editor."}
         LiveUrl={"https://blog-website-react-app-write.vercel.app/"}
         GithubUrl={"https://github.com/Adeel-Haider-03/BlogWebsite-React-AppWrite"}
         src={"./Blog.png"}
         />
 
       <SingleCard
-        title={"OneClick-Chrome Extension"}
-        description={"This is a Chrome extension that allows users to quickly summarize articles/Blog OR explain piece of code line by line with just one click."}
+        title={"OneClick — Chrome Extension"}
+        description={"An AI-powered Chrome extension that summarizes web articles and explains code line-by-line in a single click, using the Google Gemini API for NLP-based text analysis."}
         LiveUrl={""}
         GithubUrl={"https://github.com/Adeel-Haider-03/OneClick-chrome_Extension"}
         src={"./OneClick.png"}
         />
 
-      
       <SingleCard
         title={"ATS Resume Checker"}
-        description={"This is a React project that allows users to check their resumes against ATS (Applicant Tracking System) standards, and give suggestions for improvement."}
+        description={"An AI-powered resume analysis tool with ~85% PDF parsing accuracy that checks resumes against ATS standards and delivers actionable improvement insights using Google Generative AI."}
         LiveUrl={"https://my-ats-resume-checker.vercel.app/"}
         GithubUrl={"https://github.com/Adeel-Haider-03/ATS-Resume-Checker"}
         src={"./ATS.png"}
         />
 
-      <SingleCard
-        title={"Github User Finder"}
-        description={"This is a React project that allows you to search for GitHub users and view their profiles, leveraging the GitHub API."}
-        LiveUrl={"https://github-user-finder-react.vercel.app/"}
-        GithubUrl={"https://github.com/Adeel-Haider-03/GithubUserFinder-React"}
-        src={"./Github.png"}
-        />
-     
-     
+
     </div>
     </div>
   )
