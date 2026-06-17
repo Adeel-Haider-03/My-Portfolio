@@ -1,47 +1,77 @@
 // @flow strict
+import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { CgProfile } from "react-icons/cg";
+import { HiMenu, HiX } from "react-icons/hi";
+
+const navLinks = [
+  { label: "ABOUT", to: "/#about" },
+  { label: "EXPERIENCE", to: "/#experience" },
+  { label: "SKILLS", to: "/#skills" },
+  { label: "PROJECTS", to: "/#project" },
+  { label: "CONTACT", to: "/#contact" },
+];
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <nav id="navbar" className="mx-8 bg-transparent">
       <div className="flex items-center justify-between py-5">
         <div className="flex flex-shrink-0 items-center ml-6">
-
-          <HashLink to="/" className="text-green-500 text-3xl" >
+          <HashLink to="/" className="text-green-500 text-3xl" onClick={closeMenu}>
             <CgProfile />
           </HashLink>
-
         </div>
 
-        <ul className="font-bold mt-4 flex h-screen max-h-0 w-full flex-col items-start text-sm opacity-0 md:mt-0 md:h-auto md:max-h-screen md:w-auto md:flex-row md:space-x-1 md:border-0 md:opacity-100" id="navbar-default">
-          <li>
-            <HashLink className="block px-4 py-2 no-underline outline-none hover:no-underline" to="/#about">
-              <div className="text-sm text-green-500 transition-colors duration-300 hover:text-blue-500">ABOUT</div>
-            </HashLink>
-          </li>
-          <li>
-            <HashLink className="block px-4 py-2 no-underline outline-none hover:no-underline" to="/#experience">
-              <div className="text-sm text-green-500 transition-colors duration-300 hover:text-blue-500">EXPERIENCE</div>
-            </HashLink>
-          </li>
-          <li>
-            <HashLink className="block px-4 py-2 no-underline outline-none hover:no-underline" to="/#skills">
-              <div className="text-sm text-green-500 transition-colors duration-300 hover:text-blue-500">SKILLS</div>
-            </HashLink>
-          </li>
-          <li>
-            <HashLink className="block px-4 py-2 no-underline outline-none hover:no-underline" to="/#project">
-              <div className="text-sm text-green-500 transition-colors duration-300 hover:text-blue-500">PROJECTS</div>
-            </HashLink>
-          </li>
-          <li>
-            <HashLink className="block px-4 py-2 no-underline outline-none hover:no-underline" to="/#contact">
-              <div className="text-sm text-green-500 transition-colors duration-300 hover:text-blue-500">CONTACT</div>
-            </HashLink>
-          </li>
+        {/* Desktop links */}
+        <ul className="hidden md:flex md:flex-row md:space-x-1 font-bold text-sm">
+          {navLinks.map((link) => (
+            <li key={link.label}>
+              <HashLink
+                className="block px-4 py-2 no-underline outline-none hover:no-underline"
+                to={link.to}
+              >
+                <div className="text-sm text-green-500 transition-colors duration-300 hover:text-blue-500">
+                  {link.label}
+                </div>
+              </HashLink>
+            </li>
+          ))}
         </ul>
+
+        {/* Mobile hamburger */}
+        <button
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen((prev) => !prev)}
+          className="md:hidden text-green-500 text-3xl mr-2"
+        >
+          {isOpen ? <HiX /> : <HiMenu />}
+        </button>
       </div>
+
+      {/* Mobile dropdown */}
+      {isOpen && (
+        <ul className="md:hidden flex flex-col items-start font-bold text-sm pb-4">
+          {navLinks.map((link) => (
+            <li key={link.label} className="w-full">
+              <HashLink
+                className="block px-6 py-2 no-underline outline-none hover:no-underline"
+                to={link.to}
+                onClick={closeMenu}
+              >
+                <div className="text-sm text-green-500 transition-colors duration-300 hover:text-blue-500">
+                  {link.label}
+                </div>
+              </HashLink>
+            </li>
+          ))}
+        </ul>
+      )}
     </nav>
   );
 }
